@@ -80,3 +80,20 @@ $ git config user.name "Your Name"
 $ git add .
 $ git commit
 ```
+#### Step 4: Your initial commit to GitHub
+```
+$ git remote add origin https://github.com/username/Home-AssistantConfig
+$ git pull --allow-unrelated-histories origin master
+$ git push -u origin master
+```
+You will be asked to enter your GitHub username and password.
+
+### Keep GitHub Updated
+```
+$ sudo -u homeassistant -H -s
+$ cd /home/homeassistant/.homeassistant/
+$ git add .
+$ git status
+$ git commit -m "COMMIT MESSAGE"
+$ git push origin master
+```
