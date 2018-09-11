@@ -1,12 +1,12 @@
 # Home-AssistantConfig
 Backup and Step-by-Step configuration of my Home-Assistant.
 
-# Hardware
+## Hardware
 1x Raspberry Pi 3<br/>
 1x Phillips Hue Bridge<br/>
 2x Philips Hue White A19 60W Smart Bulb
 
-# Installation
+## Installation
 1. Download the [Hassbian Image]<br/>
 2. Use [Etcher] to flash the image into the SD card.<br/>
 3. Open the `boot` partition and create a new file `wpa_supplicant.conf`. With the following content:<br/>
@@ -24,3 +24,14 @@ network={
 
 [Hassbian Image]: https://github.com/home-assistant/pi-gen/releases/tag/untagged-8e6074a6a6dbf5ed52ca
 [Etcher]: https://etcher.io/
+
+### Updating the Host Operating System
+SSH to your system as the user `pi` and run:
+```
+$ sudo hassbian-config upgrade hassbian
+```
+### Updating Home Assistant
+SSH to your system as the user `pi` and run:
+```
+$ sudo hassbian-config upgrade homeassistant
+```
