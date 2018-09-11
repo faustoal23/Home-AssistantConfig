@@ -35,3 +35,8 @@ SSH to your system as the user `pi` and run:
 ```
 $ sudo hassbian-config upgrade homeassistant
 ```
+### Expand the Filesystem, change Time Zone and Password
+SSH to your system as the user `pi` and run:
+```
+$ sudo raspi-config
+```
