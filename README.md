@@ -50,6 +50,9 @@ sudo apt-get upgrade
 * Home Assistant will be started as a service run by the user `homeassistant`
 * The configuration is located at `/home/homeassistant/.homeassistant`
 
+## Installing Samba
+`$ sudo hassbian-config install samba`
+
 ## Configuration Backup to GitHub
 #### Step 1: Installing and Initializing Git
 Install the Git package on your Home Assistant server:
