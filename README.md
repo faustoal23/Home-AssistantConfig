@@ -70,3 +70,13 @@ Create a `.gitignore` file using `Notepad++` editor and place it in the root of 
 secrets.yaml
 known_devices.yaml
 ```
+#### Step 3: Preparing your Home Assistant Directory for GitHub
+```
+$ sudo -u homeassistant -H -s
+$ cd /home/homeassistant/.homeassistant/
+$ git init
+$ git config user.email "you@example.com"
+$ git config user.name "Your Name"
+$ git add .
+$ git commit
+```
