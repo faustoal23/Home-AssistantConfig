@@ -58,7 +58,7 @@ $ sudo apt-get update
 $ sudo apt-get install git
 ```
 #### Step 2: Creating `.GITIGNORE`
-Create a `.gitignore` file and place it in the root of your Home Assistant configuration directory: `<config dir>/.gitignore`.
+Create a `.gitignore` file using `Notepad++` editor and place it in the root of your Home Assistant configuration directory: `<config dir>/.gitignore`.
 ```
 # Example .gitignore file for your config dir
 *
