@@ -41,6 +41,6 @@ SSH to your system as the user `pi` and run:
 $ sudo raspi-config
 ```
 #### Technical Details
-..* Home Assistant is installed in a virtual Python environment at `/svr/homeassistant/`
-..* Home Assistant will be started as a service run by the user `homeassistant`
-..* The configuration is located at `/home/homeassistant/.homeassistant`
+* Home Assistant is installed in a virtual Python environment at `/svr/homeassistant/`
+* Home Assistant will be started as a service run by the user `homeassistant`
+* The configuration is located at `/home/homeassistant/.homeassistant`
