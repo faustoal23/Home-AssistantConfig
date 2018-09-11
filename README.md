@@ -40,7 +40,30 @@ SSH to your system as the user `pi` and run:
 ```
 $ sudo raspi-config
 ```
+### Update and Upgrade Packages
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
 #### Technical Details
 * Home Assistant is installed in a virtual Python environment at `/svr/homeassistant/`
 * Home Assistant will be started as a service run by the user `homeassistant`
 * The configuration is located at `/home/homeassistant/.homeassistant`
+
+## Configuration Backup to GitHub
+#### Step 1: Installing and Initializing Git
+Install the Git package on your Home Assistant server:
+```
+$ sudo apt-get update
+$ sudo apt-get install git
+```
+#### Step 2: Creating `.GITIGNORE`
+Create a `.gitignore` file and place it in the root of your Home Assistant configuration directory: `<config dir>/.gitignore`.
+```
+# Example .gitignore file for your config dir
+*
+!*.yaml
+!.gitignore
+secrets.yaml
+known_devices.yaml
+```
