@@ -54,7 +54,7 @@ sudo apt-get upgrade
 `$ sudo hassbian-config install samba`
 
 ## Installing DuckDNS
-`$ sudo hassbian-config install duckdns
+`$ sudo hassbian-config install duckdns`
 
 ## Configuration Backup to GitHub
 #### Step 1: Installing and Initializing Git
