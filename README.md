@@ -53,6 +53,9 @@ sudo apt-get upgrade
 ## Installing Samba
 `$ sudo hassbian-config install samba`
 
+## Installing DuckDNS
+`$ sudo hassbian-config install duckdns
+
 ## Configuration Backup to GitHub
 #### Step 1: Installing and Initializing Git
 Install the Git package on your Home Assistant server:
