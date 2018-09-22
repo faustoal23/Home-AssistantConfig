@@ -49,6 +49,10 @@ $ sudo dpkg -i hassbian-scripts_0.9.1.deb
 
 ### Install Home Assistant
 ```
+$ sudo useradd -rm homeassistant -G dialout,gpio
+$ cd /srv
+$ sudo mkdir homeassistant
+$ sudo chown homeassistant:homeassistant homeassistant
 $ sudo hassbian-config install homeassistant
 ```
 
